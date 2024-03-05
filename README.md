@@ -1,4 +1,4 @@
 GRUPPO CRMNCC
-Andrea Broccoletti 886155
-Ivan Rossini 886154
-Stefano Scagliola 887655
+Andrea Broccoletti, [@BrockDeveloper](https://github.com/BrockDeveloper) 
+Ivan Rossini, [@Token404](https://github.com/Token404) 
+Stefano Scagliola, [@Steee29](https://github.com/Steee29) 
