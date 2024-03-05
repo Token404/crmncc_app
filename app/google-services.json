@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "639749212704",
+    "firebase_url": "https://crmncc-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "crmncc",
+    "storage_bucket": "crmncc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639749212704:android:2ab71b94e7b420ee280a45",
+        "android_client_info": {
+          "package_name": "it.crmnccgroup.crmncc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBayJpH7-RwFGAQTCWnL5nqoHSwJE6pcFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

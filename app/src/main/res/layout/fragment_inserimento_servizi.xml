@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp"
+        tools:context=".util.DatiServizioFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.025" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPartenzaInserimentoServizi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/autoCompleteClienteInserimentoServizi">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editInputPartenzaInserimentoServizi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/textPartenza" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputDestinazioneInserimentoServizi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/textInputPartenzaInserimentoServizi">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editInputDestinazioneInserimentoServizi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/textDestinazione" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonOrarioInserimentoServizi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/buttonSelezione"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/textOrarioInserimentoServizi" />
+
+        <TextView
+            android:id="@+id/textOrarioInserimentoServizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/textDataeOra"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/buttonMappa" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPasseggeroInserimentoServizi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/buttonOrarioInserimentoServizi">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editInputPasseggeroInserimentoServizi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/textPasseggero" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputImportoInserimentoServizi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toBottomOf="@+id/textInputPasseggeroInserimentoServizi">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editInputImportoInserimentoServizi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/textImporto" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonAnnullaInserimentoServizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/buttonAnnulla"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/autoCompleteMezziInserimentoServizi" />
+
+        <Button
+            android:id="@+id/buttonConfermaInserimentoServizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/buttonConferma"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/autoCompleteMezziInserimentoServizi" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="380dp"
+            app:layout_constraintGuide_percent="0.975" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputNumeroPasseggeriInserimentoServizi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/textInputImportoInserimentoServizi"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/textInputPasseggeroInserimentoServizi">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editInputNumeroPasseggeriInserimentoServizi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/textNrPasseggeri" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteClienteInserimentoServizi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="@string/textCliente"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/textClienteInserimentoServizi" />
+
+        <TextView
+            android:id="@+id/textClienteInserimentoServizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/textCliente"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteAutistaInserimentoServizi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="@string/textAutista"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/textMezzoInserimentoServizi" />
+
+        <TextView
+            android:id="@+id/textMezzoInserimentoServizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/textAutista"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/textInputImportoInserimentoServizi" />
+
+        <TextView
+            android:id="@+id/textMezziInserimentoServizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/textMezzo"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/autoCompleteAutistaInserimentoServizi" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteMezziInserimentoServizi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="@string/textMezzo"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/textMezziInserimentoServizi" />
+
+        <Button
+            android:id="@+id/buttonMappa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:enabled="false"
+            android:text="@string/buttonMappa"
+            app:icon="@android:drawable/ic_dialog_map"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintTop_toBottomOf="@+id/textInputDestinazioneInserimentoServizi" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
